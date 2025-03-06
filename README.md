@@ -32,11 +32,24 @@ $$
 U(p)\ket{0} = \begin{bmatrix}\alpha_1&\alpha_3\\\alpha_2&\alpha_4\end{bmatrix}\begin{bmatrix}1\\0\end{bmatrix} = \begin{bmatrix}\alpha_1\\\alpha_2\end{bmatrix} = \ket{\psi}\\\psi \sim Bernoulli(p)
 $$
 
-By the definition of the $Bernoulli$ random variable, we can already conclude that our target state must have $|\alpha_2|^2 = p$ and by choosing the coeficients to be positive real numbers instead of complex numbers, we conclude $\alpha_2 = \sqrt{p}$ and $\alpha_1=\sqrt{1-p}$. Expanding the restriction that $U(p)$ must be unitary, we can determine $\alpha_3$ and $\alpha_4$.
+By the definition of the $Bernoulli$ random variable, we can already conclude that our target state must have $|\alpha_2|^2 = p$ and by choosing the $\alpha_1$ and $\alpha_2$ coefficients to be positive real numbers instead of complex numbers, we conclude $\alpha_2 = \sqrt{p}$ and $\alpha_1=\sqrt{1-p}$.
+
+Expanding the restriction that $U(p)$ must be unitary, we can determine $\alpha_3$ and $\alpha_4$.
 
 $$
+U(p)U(p)^{\dag} = \begin{bmatrix}\sqrt{1-p}&\alpha_3\\\sqrt{p}&\alpha_4\end{bmatrix}\begin{bmatrix}\sqrt{1-p}&\sqrt{p}\\\bar{\alpha}_3&\bar{\alpha}_4\end{bmatrix} = \begin{bmatrix}1&0\\0&1\end{bmatrix}\\\begin{cases}1-p + \alpha_3\bar{\alpha}_3 &= 1\\\sqrt{p}\sqrt{1-p} + \alpha_3\bar{\alpha_4} &= 0\\\sqrt{p}\sqrt{1-p} + \alpha_4\bar{\alpha}_3 &= 0\\ p + \alpha_4\bar{\alpha_4} & = 1\end{cases}
+$$
 
+The first equation in the system could be easily made true if $\alpha_3 = \pm\sqrt{p}$. Suppose we pick $\alpha_3 = -\sqrt{p}$, then the second equation in the system states that $\bar{\alpha}_4 = \sqrt{1 - p}$. Since we picked real coefficients for every $\alpha$, we've already determined the matrix $U(p)$ and it's conjugate transpose, now it is just a matter of checking it satisfies the third and fourth equation, that is
 
+$$
+\sqrt{p}\sqrt{1-p} - \sqrt{p}\sqrt{1-p} = 0\\p + \sqrt{1-p}\sqrt{1-p} = p + 1 - p = 1,
+$$
+
+concluding that
+
+$$
+U(p) = \begin{bmatrix}\sqrt{1-p}&-\sqrt{p}\\\sqrt{p}&\sqrt{1-p}\end{bmatrix}
 $$
 
 ## Binomial Distribution
