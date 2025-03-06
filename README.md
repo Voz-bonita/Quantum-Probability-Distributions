@@ -20,7 +20,7 @@ $$
 
 then we say that $X\sim Bernoulli(p)$.
 
-Thinking about qubits, we can see that this is very simillar to their behavior when performing measurement. A given qubit in state $\ket{\psi} = \begin{bmatrix}\alpha_1&\alpha_2\end{bmatrix}^{T}$, when measured will return the outcome $\ket{0}$ with probability $|{\alpha_1}|^{2}$ and $\ket{1}$ with probability $|\alpha_2|^{2}$. Due to the restriction $|{\alpha_1}|^{2} + |{\alpha_2}|^{2} = 1$, we can think of quantum states as Bernoulli random variables in the form
+Thinking about qubits, we can see that this is very simillar to their behavior when performing measurement. A given qubit in state $\ket{\psi} = [\alpha_1~~\alpha_2]^{T}$, when measured will return the outcome $\ket{0}$ with probability $|{\alpha_1}|^{2}$ and $\ket{1}$ with probability $|\alpha_2|^{2}$. Due to the restriction $|{\alpha_1}|^{2} + |{\alpha_2}|^{2} = 1$, we can think of quantum states as Bernoulli random variables in the form
 
 $$
 P(\psi=x) = \begin{cases}1-|\alpha_2|^2,&\text{if } x=0\\\\|\alpha_2|^2,&\text{if } x=1\end{cases}
