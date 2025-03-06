@@ -40,7 +40,15 @@ $$
 U(p)U(p)^{\dag} = \begin{bmatrix}\sqrt{1-p}&\alpha_3\\\sqrt{p}&\alpha_4\end{bmatrix}\begin{bmatrix}\sqrt{1-p}&\sqrt{p}\\\bar{\alpha}_3&\bar{\alpha}_4\end{bmatrix} = \begin{bmatrix}1&0\\0&1\end{bmatrix}\\\begin{cases}1-p + \alpha_3\bar{\alpha}_3 &= 1\\\sqrt{p}\sqrt{1-p} + \alpha_3\bar{\alpha_4} &= 0\\\sqrt{p}\sqrt{1-p} + \alpha_4\bar{\alpha}_3 &= 0\\ p + \alpha_4\bar{\alpha_4} & = 1\end{cases}
 $$
 
-The first equation in the system could be easily made true if $\alpha_3 = \pm\sqrt{p}$. Suppose we pick $\alpha_3 = -\sqrt{p}$, then the second equation in the system states that $\bar{\alpha}_4 = \sqrt{1 - p}$. Since we picked real coefficients for every $\alpha$, we've already determined the matrix $U(p)$ and it's conjugate transpose, now it is just a matter of checking it satisfies the third and fourth equation, that is
+\\begin{equation}
+
+\label{eq:unitary_u_p}
+
+begin{cases}1-p + \alpha_3\bar{\alpha}\_3 &= 1\\\sqrt{p}\sqrt{1-p} + \alpha_3\bar{\alpha_4} &= 0\\\sqrt{p}\sqrt{1-p} + \alpha_4\bar{\alpha}\_3 &= 0\\ p + \alpha_4\bar{\alpha_4} & = 1\end{cases}
+
+\end{equation}
+
+The first equation in \ref{eq:unitary_u_p} could be easily made true if $\alpha_3 = \pm\sqrt{p}$. Suppose we pick $\alpha_3 = -\sqrt{p}$, then the second equation in the system states that $\bar{\alpha}_4 = \sqrt{1 - p}$. Since we picked real coefficients for every $\alpha$, we've already determined the matrix $U(p)$ and it's conjugate transpose, now it is just a matter of checking it satisfies the third and fourth equation, that is
 
 $$
 \sqrt{p}\sqrt{1-p} - \sqrt{p}\sqrt{1-p} = 0\\p + \sqrt{1-p}\sqrt{1-p} = p + 1 - p = 1,
