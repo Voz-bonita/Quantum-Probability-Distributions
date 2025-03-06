@@ -15,7 +15,7 @@ This built on top of Qiskit. If you want to build it yourself, there is a `requi
 Suppose $X$ describes a random event with binary outcome, tipically $0$ or $1$. If the outcome $1$ happens with probability $p$ and the outcome $0$ happens with probability $1 - p$, i.e,
 
 $$
-P(X=x) = \begin{cases}1-p,&\text{if } x=0\\ p,&\text{if } x=1\end{cases}
+P(X=x) = \begin{cases}1-p,&\text{if } x=0\\\\p,&\text{if } x=1\end{cases}
 $$
 
 then we say that $X\sim Bernoulli(p)$.
