@@ -26,6 +26,19 @@ $$
 P(\psi=x) = \begin{cases}1-|\alpha_2|^2,&\text{if } x=0\\|\alpha_2|^2,&\text{if } x=1\end{cases}\\\psi \sim Bernoulli(|\alpha_2|^2)
 $$
 
+Now the question is how to set a quantum state to encode a desired $Bernoulli(p)$ distribution. To make things easier, let's consider the task of initializing such a quantum state, i.e., find a unitary matrix $U(p)$ such that
+
+$$
+U(p)\ket{0} = \begin{bmatrix}\alpha_1&\alpha_3\\\alpha_2&\alpha_4\end{bmatrix}\begin{bmatrix}1\\0\end{bmatrix} = \begin{bmatrix}\alpha_1\\\alpha_2\end{bmatrix} = \ket{\psi}\\\psi \sim Bernoulli(p)
+$$
+
+By the definition of the $Bernoulli$ random variable, we can already conclude that our target state must have $|\alpha_2|^2 = p$ and by choosing the coeficients to be positive real numbers instead of complex numbers, we conclude $\alpha_2 = \sqrt{p}$ and $\alpha_1=\sqrt{1-p}$. Expanding the restriction that $U(p)$ must be unitary, we can determine $\alpha_3$ and $\alpha_4$.
+
+$$
+
+
+$$
+
 ## Binomial Distribution
 
 ## Normal Distribution (Gaussian)
